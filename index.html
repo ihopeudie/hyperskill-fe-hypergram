@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hypergram</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="page-content">
+        <section class="canvas-container">
+            <canvas id="canvas"></canvas>
+        </section>
+        <section class="settings-container">
+            <div class="settings-section">
+                <input type="file" id="file-input" accept="image/*"/>
+            </div>
+            <div class="settings-section">
+                <label for="brightness">Brightness</label>
+                <input class="image-inputs" type="range" min="-255" max="255" step="1" id="brightness">
+            </div>
+            <div class="settings-section">
+                <label for="contrast">Contrast</label>
+                <input class="image-inputs" type="range" min="-128" max="128" step="1" id="contrast">
+            </div>
+            <div class="settings-section">
+                <label for="transparent">Transparent</label>
+                <input class="image-inputs" type="range" min="0" max="1" step="0.1" value="1" id="transparent">
+            </div>
+            <div class="settings-section">
+                <button id="save-button">Save Image</button>
+            </div>
+        </section>
+    </div>
+</div>
+</body>
+</html>
